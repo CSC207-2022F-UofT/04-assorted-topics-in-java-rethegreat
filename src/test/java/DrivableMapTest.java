@@ -12,7 +12,7 @@ public class DrivableMapTest {
         dm = new DrivableMap();
     }
 
-    @Test(timeout = 50)
+    @Test(timeout = 500)
     public void testAddDrivable() {
         Horse h = new Horse();
         assertTrue(dm.addDrivable("Name", h));
@@ -20,7 +20,7 @@ public class DrivableMapTest {
         assertTrue(dm.addDrivable("Name2", h));
     }
 
-    @Test(timeout = 50)
+    @Test(timeout = 500)
     public void testHasFasterThan() {
         Horse h = new Horse();
         dm.addDrivable("Name", h);
@@ -28,7 +28,7 @@ public class DrivableMapTest {
         assertTrue(dm.hasFasterThan(1));
     }
 
-    @Test(timeout = 50)
+    @Test(timeout = 500)
     public void testGetTradable() {
         Horse h = new Horse();
         Unicorn u = new Unicorn();
